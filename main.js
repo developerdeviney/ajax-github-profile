@@ -20,11 +20,12 @@ fetch(userUrl)
         targetEl.appendChild(nameEl)
         
         const githubEl = document.createElement('p')
+        githubEl.classList.add('text-to-url')
         githubEl.innerText = data.html_url
         orgSection.appendChild(githubEl)
 
         const company = document.createElement('p')
-        company.innerText = data.company
+        company.innerText = data.company 
         orgSection.appendChild(company)  
         
         const websiteUrl = document.createElement('p')
@@ -35,6 +36,9 @@ fetch(userUrl)
         trueStoray.innerText = data.bio 
         theStory.appendChild(trueStoray)
 
-        
+        const img = document.createElement("img")
+        img.src = data.avatar_url
+        theStory.appendChild(img)
+
 
     })

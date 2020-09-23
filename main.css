@@ -1,3 +1,23 @@
 p {
     font-family: fantasy;
+    font-size: 12px;
 }
+
+.property {
+    font: bold;
+}
+
+
+
+
+/* Test to see if I could chnage url to text in CSS 
+.text-to-url {
+    visibility: hidden;
+
+.text-to-url::after { 
+    content: 'My GitHub Url' url("https://github.com/developerdeviney");
+    visibility: visible;
+    font-family: fantasy;
+    color: black;
+    display: block;
+} */
